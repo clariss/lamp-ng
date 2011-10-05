@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>SLM Studio</title>
+</head>
+<body>
+<pre>
+<b>
+o       o   o   o o--o       o   o  o-o
+|      / \  |\ /| |   |      |\  | o
+|     o---o | o | o--o  o--o | \ | | o-o
+|     |   | |   | |          |  \| o   |
+o---o o   o o   o o          o   o  o-o
+</b>
+</pre>
+<b>Operating system:</b>
+<pre><?php system("uname -a"); ?> </pre>
+<b>CPU information:</b>
+<pre><?php system("cat /proc/cpuinfo"); ?></pre>
+<b>System time:</b>
+<pre><?php system("date"); ?></pre>
+<b>Uptime:</b>
+<pre><?php system("uptime | awk -F \"up\" '{ print $2 }'"); ?></pre>
+<b>Memory usage (MB):</b>
+<pre><?php system("free -m"); ?> </pre>
+<b>Disk usage:</b>
+<pre><?php system("df -h"); ?></pre>
+</body>
+</html>
+
+
