@@ -37,3 +37,13 @@ a2ensite redmine
 /etc/init.d/apache2 restart
 cp /usr/share/doc/redmine/examples/email.yml.example /etc/redmine/default/email.yml
 }}}
+
+4- Access Redmine in a web browser. URL should be:
+{{{
+http://<host IP>/redmine
+}}}
+
+For Example
+{{{
+http://192.168.0.90/redmine
+}}}
