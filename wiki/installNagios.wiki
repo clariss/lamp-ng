@@ -14,6 +14,13 @@ Finalize the installation:
 apt-get install nagios-nrpe-plugin
 apt-get install ndoutils-nagios3-mysql
 }}}
+
+Configuring ndoutils-nagios3-mysql answers: 
+  # YES
+  # lamp-ng (or the MySql root password)
+  # lamp-ng (ndoutils Db password)
+  # lamp-ng (confirm password)
+
 ==Install exfoliation Nagios skin==
 ----
 The following is optional, but will install a quite nice skin for nagios3.
