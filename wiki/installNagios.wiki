@@ -1,0 +1,37 @@
+==Install Nagios3==
+----
+Install Nagios 3 package:
+{{{
+apt-get -y install nagios3
+}}}
+The installation will require some user input. Enter a s follows:
+  # lamp-ng (Nagios admin password)
+  # lamp-ng (password confirmation)
+  # WORKGROUP (or your network domain)
+
+==Install exfoliation Nagios skin==
+----
+The following is optional, but will install a quite nice skin for nagios3.
+  # back up some of Nagios3 files:
+{{{
+mv /usr/share/nagios3/htdocs/images /usr/share/nagios3/htdocs/images-orig
+mv /etc/nagios3/stylesheets /etc/nagios3/stylesheets-orig
+}}}
+  # download and uncompress skin:
+{{{
+cd /tmp
+wget http://lancet.mit.edu/mwall/projects/nagios/exfoliation-0.7.tgz
+tar xvfz /tmp/exfoliation-0.7.tgz
+}}}
+  # install skin:
+{{{
+mv stylesheets /etc/nagios3
+mv images /usr/share/nagios3/htdocs
+}}}
+  # fix skin installation bug:
+{{{
+cd /usr/share/nagios3/htdocs/images/logos
+mkdir base
+cp debian.png base
+}}}
+}}}
