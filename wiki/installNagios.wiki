@@ -9,6 +9,11 @@ The installation will require some user input. Enter a s follows:
   # lamp-ng (password confirmation)
   # WORKGROUP (or your network domain)
 
+Finalize the installation:
+{{{
+apt-get install nagios-nrpe-plugin
+apt-get install ndoutils-nagios3-mysql
+}}}
 ==Install exfoliation Nagios skin==
 ----
 The following is optional, but will install a quite nice skin for nagios3.
