@@ -1,10 +1,17 @@
-*REDMINE Installation howto*
+==REDMINE Installation h0wt0==
+----
 
 1- Install main packages in sequence as shown below:
 {{{
 apt-get install redmine-mysql
 apt-get install redmine
 }}}
+The installation of Redmine will request some user input.
+These are the answers for the screens _Configuring Redmine_: 
+  # YES
+  # mysql
+  # lamp-ng (or password defined for mySQL root user)
+  # lamp-ng (or another password of choice)
 
 2- Fix a Redmine installation bug in the vendor.rb file:
 {{{
