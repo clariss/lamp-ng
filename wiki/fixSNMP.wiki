@@ -1,4 +1,5 @@
 ==Fix SNMP in Debian 6 h0wt0==
+----
 Because of a non-free licensing issue, Debian 6 needs to be configured to get some non-free packages to fix a SNMP problem.
 First, configure Debian to get non-free packages:
 {{{
@@ -18,4 +19,3 @@ Finally, get the non-free package:
 {{{
 apt-get install snmp-mibs-downloader
 }}}
-
