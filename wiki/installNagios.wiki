@@ -17,7 +17,7 @@ apt-get install ndoutils-nagios3-mysql
 
 Configuring ndoutils-nagios3-mysql answers: 
   # YES
-  # lamp-ng (or the MySql root password)
+  # lamp-ng (or the MySQL root password)
   # lamp-ng (ndoutils Db password)
   # lamp-ng (confirm password)
 
