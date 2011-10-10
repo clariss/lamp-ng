@@ -19,3 +19,12 @@ Finally, get the non-free package:
 {{{
 apt-get install snmp-mibs-downloader
 }}}
+
+Edit snmp config:
+{{{
+vi /etc/snmp/snmp.conf
+}}}
+and remove line:
+{{{
+mibs
+}}}
