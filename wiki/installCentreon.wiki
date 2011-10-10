@@ -1,0 +1,2 @@
+update-rc.d ndoutils defaults
+/etc/init.d/ndoutils start
