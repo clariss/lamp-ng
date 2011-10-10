@@ -1,2 +1,7 @@
 update-rc.d ndoutils defaults
+
 /etc/init.d/ndoutils start
+
+update-rc.d centstorage defaults
+
+/etc/init.d/centstorage start
