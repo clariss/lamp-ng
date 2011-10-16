@@ -1,11 +1,12 @@
 get Debian image (Debian 6, 16Gb disk)
 {{{
-
+wget http://www.downloadsnewit.co.uk/SD-images/Dreamplug/NewIT-Dreamplug-Debian-Squeeze/NewIT-Dreamplug-Debian-Squeeze-16Gb-30Aug11.img.gz
 }}}
 
 unzip and install Debian image
 {{{
-
+gunzip NewIT-Dreamplug-Debian-Squeeze-16Gb-30Aug11.img.gz
+dd if=NewIT-Dreamplug-Debian-Squeeze-16Gb-30Aug11.img of=/dev/sdb bs=10M
 }}}
 
 install lamp-ng for Debian 6
