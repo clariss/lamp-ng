@@ -12,3 +12,13 @@ install lamp-ng for Debian 6
 {{{
 
 }}}
+
+fix MySQL ibdata1 default config, changing from 1 database file to multiple
+{{{
+
+}}}
+
+fix SNMP
+{{{
+
+}}}
