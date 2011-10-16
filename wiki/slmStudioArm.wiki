@@ -1,0 +1,14 @@
+get Debian image (Debian 6, 16Gb disk)
+{{{
+
+}}}
+
+unzip and install Debian image
+{{{
+
+}}}
+
+install lamp-ng for Debian 6
+{{{
+
+}}}
