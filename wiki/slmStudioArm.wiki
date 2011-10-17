@@ -9,12 +9,18 @@ gunzip NewIT-Dreamplug-Debian-Squeeze-16Gb-30Aug11.img.gz
 dd if=NewIT-Dreamplug-Debian-Squeeze-16Gb-30Aug11.img of=/dev/sdb bs=10M
 }}}
 
-install lamp-ng for Debian 6
+install lamp-ng for Debian 6, download install script
 {{{
-
+wget http://lamp-ng.googlecode.com/svn/trunk/exe/install_v1_0.sh
 }}}
 
-fix MySQL ibdata1 default config, changing from 1 database file to multiple
+execute install script
+{{{
+chmod +x install_v1_0.sh
+. install_v1_0.shlamp-ng
+}}}
+
+fix MySQL ibdata1 default config, changing from 1 database file to 1 file per table.
 {{{
 vi /etc/mysql/my.cnf
 }}}
