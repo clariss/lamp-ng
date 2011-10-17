@@ -16,7 +16,16 @@ install lamp-ng for Debian 6
 
 fix MySQL ibdata1 default config, changing from 1 database file to multiple
 {{{
-
+vi /etc/mysql/my.cnf
+}}}
+add MySQL configuration so a tablespace file is created for each table. Find [mysqld] in the file and add innodb_file_per_table as below.
+{{{
+[mysqld]
+innodb_file_per_table = 1
+}}}
+Restart MySQL server
+{{{
+/etc/init.d/mysql restart
 }}}
 
 fix SNMP
