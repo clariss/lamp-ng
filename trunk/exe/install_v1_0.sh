@@ -54,9 +54,9 @@ clear
 
 echo "${txtred}04/15 - syslog-ng${txtrst}"
 apt-get -y install syslog-ng
-mv /etc/syslog-ng/syslog-ng.conf /etc/syslog-ng/syslog-ng.conf.original
-wget --no-check-certificate -O /etc/syslog-ng/syslog-ng.conf https://lamp-ng.svn.sourceforge.net/svnroot/lamp-ng/files/syslog-ng/syslog-ng.conf
-/etc/init.d/syslog-ng start
+mv /etc/syslog-ng/syslog-ng.conf /etc/syslog-ng/syslog-ng.conf.orig
+wget -O /etc/syslog-ng/syslog-ng.conf http://lamp-ng.googlecode.com/svn/trunk/syslog-ng/syslog-ng.conf
+/etc/init.d/syslog-ng restart
 clear
 
 echo "${txtred}05/15 - sudo${txtrst}"
@@ -78,16 +78,8 @@ clear
 
 echo "${txtred}09/15 - Apache web server${txtrst}"
 apt-get -y install apache2
-mv /var/www/index.html /var/www/index.html.original
-mv /etc/apache2/httpd.conf /etc/apache2/httpd.conf.original
-mv /etc/apache2/sites-available/default-ssl /etc/apache2/sites-available/default-ssl.original
-mv /etc/apache2/sites-available/default /etc/apache2/sites-available/default.original
-mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.original
-wget --no-check-certificate -O /var/www/index.php https://lamp-ng.svn.sourceforge.net/svnroot/lamp-ng/files/www/index.txt
-wget --no-check-certificate -O /etc/apache2/httpd.conf https://lamp-ng.svn.sourceforge.net/svnroot/lamp-ng/files/apache2/httpd.conf
-wget --no-check-certificate -O /etc/apache2/sites-available/default-ssl https://lamp-ng.svn.sourceforge.net/svnroot/lamp-ng/files/apache2/default-ssl
-wget --no-check-certificate -O /etc/apache2/sites-available/default https://lamp-ng.svn.sourceforge.net/svnroot/lamp-ng/files/apache2/default
-wget --no-check-certificate -O /etc/apache2/apache2.conf https://lamp-ng.svn.sourceforge.net/svnroot/lamp-ng/files/apache2/apache2.conf
+mv /var/www/index.html /var/www/index.html.orig
+wget -O /var/www/index.php http://lamp-ng.googlecode.com/svn/trunk/www/index.txt
 
 clear
 
