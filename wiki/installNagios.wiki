@@ -47,3 +47,8 @@ mkdir base
 cp debian.png base
 }}}
 }}}
+
+Verify Nagios configuration file (nagios.cfg)
+{{{
+/usr/sbin/nagios3 -v /etc/nagios3/nagios.cfg
+}}}
