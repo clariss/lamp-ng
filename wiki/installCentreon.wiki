@@ -1,3 +1,4 @@
+{{{
 wget http://download.centreon.com/centreon/centreon-2.3.1.tar.gz
 
 tar xzf centreon-2.3.1.tar.gz
@@ -422,3 +423,5 @@ update-rc.d ndoutils defaults
 update-rc.d centstorage defaults
 
 /etc/init.d/centstorage start
+
+}}}
