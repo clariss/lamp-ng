@@ -1,3 +1,6 @@
+==Install Nagios NRPE in clients==
+----
+
 Each one of the clients will need to have this installed and configured. On each machine that the Nagios host will contact to execute plugins remotely, issue 
 {{{
 apt-get install nagios-nrpe-server
