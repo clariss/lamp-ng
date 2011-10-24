@@ -40,6 +40,7 @@ Try a simple check from the monioring host (replace the ip by the one of the rem
 }}}
 
 references:
+
 http://debianclusters.org/index.php/Nagios_NRPE_Addon_Installation_and_Configuration
 
 http://forum.centreon.com/showthread.php/11775-NRPE-Install-Tutorial
