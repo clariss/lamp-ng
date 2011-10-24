@@ -26,6 +26,11 @@ command[check_users]=/usr/lib/nagios/plugins/check_users -w 1 -c 2
 command[check_load]=/usr/lib/nagios/plugins/check_load -w 2 -c 3
 }}}
 
+Restart the NRPE daemon with
+{{{
+/etc/init.d/nagios-nrpe-server restart 
+}}}
+
 Test that remote and monitoring hosts can communicate. On the monitoring host, issue (replace IP by the one of the remote host):
 {{{
 /usr/lib/nagios/plugins/check_nrpe -H 192.168.0.11
