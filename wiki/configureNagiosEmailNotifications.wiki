@@ -4,7 +4,7 @@ apt-get install mailutils postfix
 
 When the installation process prompts you to define the type of mail setup you're running, select:
 {{{
- "Internet Site". 
+ "Internet Site"
 }}}
 
 You will also want to specify the machine specific hostname for this server during the installation process. When asked for "mail name" enter you web-address, for example:
