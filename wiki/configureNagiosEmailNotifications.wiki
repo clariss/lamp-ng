@@ -2,7 +2,17 @@
 apt-get install mailutils postfix
 }}}
 
-When the installation process prompts you to define the type of mail setup you're running, select "Internet Site". You will also want to specify the machine specific hostname for this server during the installation process. Next, you'll need to update the path to the mail binary in the Nagios command file. Change both references from /bin/mail to /usr/bin/mail.
+When the installation process prompts you to define the type of mail setup you're running, select:
+{{{
+ "Internet Site". 
+}}}
+
+You will also want to specify the machine specific hostname for this server during the installation process. When asked for "mail name" enter you web-address, for example:
+{{{
+slmstudio.dyndns.org
+}}}
+
+Next, you'll need to update the path to the mail binary in the Nagios command file. Change both references from /bin/mail to /usr/bin/mail.
 
 {{{
 vi /etc/nagios3/commands.cfg
