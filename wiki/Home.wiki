@@ -1,6 +1,6 @@
 Your monitoring server starts here.
 
-[/installLampng/ Isntall Lamp NG]
+[/installLampng Install Lamp NG]
 
 installPHPMyAdmin
 
