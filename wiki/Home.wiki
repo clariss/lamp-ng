@@ -2,20 +2,20 @@ Your monitoring server starts here.
 
 [installLampng Install Lamp NG]
 
-installPHPMyAdmin
+[installPHPMyAdmin  Install PHPMyAdmin]
 
-installNagios
+[installNagios Install Nagios]
 
-installCentreon
+[installCentreon Install Centreon]
 
-fixSNMP
+[fixSNMP Fix SNMP]
 
-installNagiosClient
+[installNagiosClient Install Nagios clients]
 
-installLogzilla
+[installLogzilla Install Logzilla]
 
-redmineInstall
+[redmineInstall Install Redmine]
 
-configureNagiosEmailNotifications
+[configureNagiosEmailNotifications Configure Nagios e-mail notifications]
 
-configureRedmineEmailNotifications
+[configureRedmineEmailNotifications Configure Redmine e-mail Notifications]
