@@ -1,1 +1,21 @@
 Your monitoring server starts here.
+
+installLampng
+
+installPHPMyAdmin
+
+installNagios
+
+installCentreon
+
+fixSNMP
+
+installNagiosClient
+
+installLogzilla
+
+redmineInstall
+
+configureNagiosEmailNotifications
+
+configureRedmineEmailNotifications
