@@ -43,3 +43,9 @@ Alias/login: redmine
 Email: redmine@slmstudio.dyndns.org
 Service Notification Commands: service-raise-incident
 }}}
+
+references:
+
+http://www.llamabyte.com/2011/configure-redmine-to-receive-emails-with-sendmail/
+
+http://www.redmine.org/projects/redmine/wiki/RedmineReceivingEmails
