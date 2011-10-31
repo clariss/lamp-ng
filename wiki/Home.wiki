@@ -20,4 +20,4 @@ Your monitoring server starts here.
 
 [configureNagiosEmailNotifications Configure Nagios e-mail notifications]
 
-[configureRedmineEmailNotifications Configure Redmine e-mail Notifications]
+[configureRedmineEmailNotifications Configure Redmine e-mail notifications]
