@@ -2,6 +2,8 @@ Your monitoring server starts here.
 
 [installLampng Install Lamp NG]
 
+[fixMySQL Fix MySQL]
+
 [installPHPMyAdmin  Install PHPMyAdmin]
 
 [installNagios Install Nagios]
