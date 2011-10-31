@@ -20,3 +20,11 @@ Re-start mail server
 newaliases
 /etc/init.d/postfix restart
 }}}
+
+Add new Redmine user (replace email by the one used by Nagios to send notifications):
+{{{
+Login: nagios
+First Name: Nagios
+Last Name: Email Notifications
+E-mail: nagios@slmstudio.dyndns.org
+}}}
