@@ -17,3 +17,14 @@ Find files in Linux:
 find . -name *centreon* 
 find . | xargs grep centreon 
 }}}
+
+How To import icons/images into centreon
+{{{
+Go to:
+Administration > Options > Media > Folder > Add
+(write: logos in both fields)
+Now you can upload your icons to it. Go to
+Administration > Options > Media > Images > Add
+You can chose up to 5 at a time and they should be stored in:
+/usr/local/centreon/www/img/media/logos/cisco.gif
+}}}
