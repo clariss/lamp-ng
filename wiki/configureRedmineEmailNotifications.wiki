@@ -44,6 +44,13 @@ Command Type: Notification
 Command Line: /usr/bin/printf "%b" "Priority: Immediate\nStatus: New\n\n SLM Studio Automated Notification\n\nNotification Type: $NOTIFICATIONTYPE$\n\nService: $SERVICEDESC$\nHost: $HOSTALIAS$\nAddress: $HOSTADDRESS$\nState: $SERVICESTATE$\n\nDate/Time: $DATE$ Additional Info : $SERVICEOUTPUT$" | @MAILER@ -s "Host: $HOSTALIAS$ - Service: $SERVICEDESC$ - Status: $SERVICESTATE$" $CONTACTEMAIL$
 }}}
 
+In Centreon, go to Configuration > Commands > Notifications.Add new notification command: 
+{{{
+Command Name: host-raise-incident
+Command Type: Notification
+Command Line: /usr/bin/printf "%b" "Priority: Immediate\nStatus: New\n\n SLM Studio Automated Notification\n\nNotification Type: $NOTIFICATIONTYPE$\nHost: $HOSTNAME$\nState: $HOSTSTATE$\nAddress: $HOSTADDRESS$\nInfo: $HOSTOUTPUT$\nDate/Time: $DATE$" | @MAILER@ -s "Host: $HOSTNAME$ - Status: $HOSTSTATE$" $CONTACTEMAIL$
+}}}
+
 In Centreon, go to Configuration > Users > Contacts / Users. Add a new user (replace email by the address in which Redmine will receive emails:
 {{{
 Full Name: Redmine
