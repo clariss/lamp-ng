@@ -56,6 +56,7 @@ In Centreon, go to Configuration > Users > Contacts / Users. Add a new user (rep
 Full Name: Redmine
 Alias/login: redmine
 Email: redmine@slmstudio.dyndns.org
+Host Notification Commands: host-raise-incident
 Service Notification Commands: service-raise-incident
 }}}
 
