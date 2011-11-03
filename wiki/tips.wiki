@@ -1,0 +1,19 @@
+Changing Nagios host map icons:
+{{{
+vi /etc/nagios3/hosts.cfg
+}}}
+Add to each host:
+{{{
+statusmap_image                 debian.png
+icon_image                      debian.png
+}}}
+Restart Nagios
+{{{
+/etc/init.d/nagios3 restart
+}}}
+
+Find files in Linux:
+{{{
+find . -name *centreon* 
+find . | xargs grep centreon 
+}}}
