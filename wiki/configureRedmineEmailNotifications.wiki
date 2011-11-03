@@ -29,6 +29,14 @@ Last Name: Email Notifications
 E-mail: nagios@slmstudio.dyndns.org
 }}}
 
+In Redmine, add new project as follows:
+{{{
+Name: Support
+Identifier: support
+Trackers: Support
+Modules: Issue tracking
+}}}
+
 In Centreon, go to Configuration > Commands > Notifications.Add new notification command: 
 {{{
 Command Name: service-raise-incident
