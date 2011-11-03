@@ -28,3 +28,8 @@ Administration > Options > Media > Images > Add
 You can chose up to 5 at a time and they should be stored in:
 /usr/local/centreon/www/img/media/logos/cisco.gif
 }}}
+
+changing statusmap.cgi to nicer graphics
+{{{
+http://83.18.153.218/html/projects/installation_fnagios.html
+}}}
