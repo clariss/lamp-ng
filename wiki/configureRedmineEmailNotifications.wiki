@@ -57,7 +57,9 @@ Full Name: Redmine
 Alias/login: redmine
 Email: redmine@slmstudio.dyndns.org
 Host Notification Commands: host-raise-incident
+Host Notification Options: Down, Unreachable, Recovery
 Service Notification Commands: service-raise-incident
+Service Notification Options: Warning, Critical, Recovery
 }}}
 
 references:
