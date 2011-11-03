@@ -21,7 +21,7 @@ newaliases
 /etc/init.d/postfix restart
 }}}
 
-Add new Redmine user (replace email by the one used by Nagios to send notifications):
+In Redmine, add new user as follows (replace email by the one used by Nagios to send notifications):
 {{{
 Login: nagios
 First Name: Nagios
