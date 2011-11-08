@@ -1,0 +1,1 @@
+http://www.thegeekstuff.com/2008/07/how-to-monitor-remote-windows-machine-using-nagios-on-linux/
