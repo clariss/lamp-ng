@@ -41,3 +41,8 @@ In order for these changes to take effect, you will need to restart Nagios:
 {{{
 /etc/init.d/nagios3 restart
 }}}
+
+
+Test email works from command line:
+{{{
+/usr/bin/printf "%b" "Priority: Immediate\nStatus: New\n\n Noticication from command line" | /usr/bin/mail -s "Notification subjct" foo@gmail.com
