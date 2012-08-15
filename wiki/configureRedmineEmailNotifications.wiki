@@ -62,6 +62,14 @@ Service Notification Commands: service-raise-incident
 Service Notification Options: Warning, Critical, Recovery
 }}}
 
+Test from command log:
+{{{{
+/usr/bin/printf "%b" "Priority: Immediate\nStatus: New\n\n Noticication from command line" | /usr/bin/mail -s "Notification subjct" redmine@slmstudio.dyndns.org
+}}}}
+Note that Linux user must be "nagios", as this is the user configured in Redmine to receive email.
+
+
+
 references:
 
 http://www.llamabyte.com/2011/configure-redmine-to-receive-emails-with-sendmail/
