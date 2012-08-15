@@ -62,11 +62,16 @@ Service Notification Commands: service-raise-incident
 Service Notification Options: Warning, Critical, Recovery
 }}}
 
-Test from command line:
+Verify that email from command line works:
+{{{
+/usr/bin/printf "%b" "Priority: Immediate\nStatus: New\n\n Noticication from command line" | /usr/bin/mail -s "Notification subjct" fh9977@gmail.com
+}}}
+
+Raise incident from command line:
 {{{
 /usr/bin/printf "%b" "Priority: Immediate\nStatus: New\n\n Noticication from command line" | /usr/bin/mail -s "Notification subjct" redmine@slmstudio.dyndns.org
 }}}
-Note that Linux user must be "nagios", as this is the user configured in Redmine to receive email.
+Note that Linux user must be "nagios", as this is the user configured in Redmine to receive email. See latest logfile to see mail status.
 
 
 
