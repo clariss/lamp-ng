@@ -64,7 +64,7 @@ Service Notification Options: Warning, Critical, Recovery
 
 Verify that email from command line works:
 {{{
-/usr/bin/printf "%b" "Priority: Immediate\nStatus: New\n\n Noticication from command line" | /usr/bin/mail -s "Notification subjct" fh9977@gmail.com
+/usr/bin/printf "%b" "Priority: Immediate\nStatus: New\n\n Noticication from command line" | /usr/bin/mail -s "Notification subjct" foo@gmail.com
 }}}
 
 Raise incident from command line:
