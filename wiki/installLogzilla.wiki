@@ -24,7 +24,7 @@ apt-get install msttcorefonts
 }}}
 
 
-wget http://php-syslog-ng.googlecode.com/files/logzilla_v2.9.9o.tgz
+wget https://lamp-ng.googlecode.com/files/logzilla_v2.9.9o.tgz
 
 tar xzvf logzilla_v2.9.9o.tgz
 
@@ -98,4 +98,3 @@ Test logzilla connect to MySQL:
 {{{
 printf "test\t190\tCRON\tTest\n" | /var/www/logzilla/scripts/db_insert.pl -d5 -v
 }}}
-
