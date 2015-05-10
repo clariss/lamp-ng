@@ -105,7 +105,7 @@ apt-get -y install rrdtool
 
 echo "${txtred}14/15 - Perl modules${txtrst}"
 apt-get -y install librrds-perl
-apt-get -y install ibconfig-inifiles-perl
+apt-get -y install libconfig-inifiles-perl
 apt-get -y install libcrypt-des-perl
 apt-get -y install libdigest-hmac-perl
 apt-get -y install libdigest-sha1-perl
