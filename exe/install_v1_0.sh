@@ -78,8 +78,8 @@ clear
 
 echo "${txtred}09/15 - Apache web server${txtrst}"
 apt-get -y install apache2
-mv /var/www/index.html /var/www/index.html.orig
-wget -O /var/www/index.php https://raw.githubusercontent.com/clariss/slm-studio/master/www/index.txt
+mv /var/www/html/index.html /var/www/html/index.html.orig
+wget -O /var/www/html/index.php https://raw.githubusercontent.com/clariss/slm-studio/master/www/index.txt
 
 clear
 
