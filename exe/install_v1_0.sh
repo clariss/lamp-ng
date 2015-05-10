@@ -37,7 +37,7 @@ echo "You will be asked to specify a new password for the MySQL root user"
 echo "                Remember it, we will use it later"
 echo "${txtred}!!!!!!!!!!!!!!!!!!!!!!!! A T T E N T I O N !!!!!!!!!!!!!!!!!!!!!!!!${txtrst}"
 read -p "Press enter to continue"
-clear
+
 echo "${txtred}01/15 - Update system${txtrst}"
 apt-get -y update
 apt-get -y upgrade
