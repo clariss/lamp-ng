@@ -64,7 +64,7 @@ apt-get -y install sudo
 
 
 echo "${txtred}06/15 - Linux Standard Base${txtrst}"
-apt-get -y lsb-release
+apt-get -y install lsb-release
 
 
 echo "${txtred}07/15 - dos2unix${txtrst}"
