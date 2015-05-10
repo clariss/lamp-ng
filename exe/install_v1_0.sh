@@ -55,7 +55,7 @@ clear
 echo "${txtred}04/15 - syslog-ng${txtrst}"
 apt-get -y install syslog-ng
 mv /etc/syslog-ng/syslog-ng.conf /etc/syslog-ng/syslog-ng.conf.orig
-wget -O /etc/syslog-ng/syslog-ng.conf http://lamp-ng.googlecode.com/svn/trunk/syslog-ng/syslog-ng.conf
+wget -O /etc/syslog-ng/syslog-ng.conf https://raw.githubusercontent.com/clariss/slm-studio/master/syslog-ng/syslog-ng.conf
 /etc/init.d/syslog-ng restart
 clear
 
@@ -79,7 +79,7 @@ clear
 echo "${txtred}09/15 - Apache web server${txtrst}"
 apt-get -y install apache2
 mv /var/www/index.html /var/www/index.html.orig
-wget -O /var/www/index.php http://lamp-ng.googlecode.com/svn/trunk/www/index.txt
+wget -O /var/www/index.php https://raw.githubusercontent.com/clariss/slm-studio/master/www/index.txt
 
 clear
 
