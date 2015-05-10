@@ -96,7 +96,7 @@ apt-get -y install php5-gd
 clear
 
 echo "${txtred}12/15 - MySQL-Server${txtrst}"
-apt-get -y install mysql-server-5.0
+apt-get -y install mysql-server-5.5
 clear
 
 echo "${txtred}13/15 - RDTool${txtrst}"
