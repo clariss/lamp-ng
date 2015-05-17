@@ -25,7 +25,7 @@ txtred=$(tput setaf 1) # Red
 
 dpkg-reconfigure tzdata
 
-clear
+
 
 echo "Installation script will now start"
 echo "Installing LAMP-NG"
@@ -37,55 +37,55 @@ echo "You will be asked to specify a new password for the MySQL root user"
 echo "                Remember it, we will use it later"
 echo "${txtred}!!!!!!!!!!!!!!!!!!!!!!!! A T T E N T I O N !!!!!!!!!!!!!!!!!!!!!!!!${txtrst}"
 read -p "Press enter to continue"
-clear
+
 echo "${txtred}01/15 - Update system${txtrst}"
 apt-get -y update
 apt-get -y upgrade
-clear
+
 
 echo "${txtred}02/15 - Dreamplug requirements${txtrst}" 
 apt-get -y install locales
 update-locale
-clear
+
 
 echo "${txtred}03/15 - ssh${txtrst}"
 apt-get -y install ssh
-clear
+
 
 echo "${txtred}04/15 - syslog-ng${txtrst}"
 apt-get -y install syslog-ng
 mv /etc/syslog-ng/syslog-ng.conf /etc/syslog-ng/syslog-ng.conf.orig
-wget -O /etc/syslog-ng/syslog-ng.conf http://lamp-ng.googlecode.com/svn/trunk/syslog-ng/syslog-ng.conf
+wget -O /etc/syslog-ng/syslog-ng.conf https://raw.githubusercontent.com/clariss/slm-studio/master/syslog-ng/syslog-ng.conf
 /etc/init.d/syslog-ng restart
-clear
+
 
 echo "${txtred}05/15 - sudo${txtrst}"
 apt-get -y install sudo
-clear
+
 
 echo "${txtred}06/15 - Linux Standard Base${txtrst}"
-apt-get -y lsb-release
-clear
+apt-get -y install lsb-release
+
 
 echo "${txtred}07/15 - dos2unix${txtrst}"
 apt-get -y install tofrodos
 apt-get -y install dos2unix
-clear
+
 
 echo "${txtred}08/15 - mail utilities${txtrst}"
 apt-get -y install bsd-mailx
-clear
+
 
 echo "${txtred}09/15 - Apache web server${txtrst}"
 apt-get -y install apache2
-mv /var/www/index.html /var/www/index.html.orig
-wget -O /var/www/index.php http://lamp-ng.googlecode.com/svn/trunk/www/index.txt
+mv /var/www/html/index.html /var/www/html/index.html.orig
+wget -O /var/www/html/index.php https://raw.githubusercontent.com/clariss/slm-studio/master/www/index.txt
 
-clear
+
 
 echo "${txtred}10/15 - PHP5${txtrst}"
 apt-get -y install php5
-clear
+
 
 echo "${txtred}11/15 - PHP5 modules${txtrst}"
 apt-get -y install php-pear
@@ -93,31 +93,31 @@ apt-get -y install php5-mysql
 apt-get -y install php5-ldap
 apt-get -y install php5-snmp
 apt-get -y install php5-gd
-clear
+
 
 echo "${txtred}12/15 - MySQL-Server${txtrst}"
-apt-get -y install mysql-server-5.0
-clear
+apt-get -y install mysql-server-5.5
+
 
 echo "${txtred}13/15 - RDTool${txtrst}"
 apt-get -y install rrdtool
-clear
+
 
 echo "${txtred}14/15 - Perl modules${txtrst}"
 apt-get -y install librrds-perl
-apt-get -y install ibconfig-inifiles-perl
+apt-get -y install libconfig-inifiles-perl
 apt-get -y install libcrypt-des-perl
 apt-get -y install libdigest-hmac-perl
 apt-get -y install libdigest-sha1-perl
 apt-get -y install libgd-gd2-perl
-clear
+
 
 echo "${txtred}15/15 - SNMP daemon${txtrst}"
 apt-get -y install snmp
 apt-get -y install snmpd
 apt-get -y install libnet-snmp-perl
 apt-get -y install libsnmp-perl
-clear
+
 
 echo "${txtred}FINISHING INSTALATION${txtrst}"
 echo
@@ -148,7 +148,7 @@ echo
 echo
 echo
 echo "______________________________________________________________________"
-echo "${txtred}___ INSTALATION COMPLETE - LAMP-NG IS READY - ENJOY IN MODERATION$ ___${txtrst}"
+echo "${txtred}___ INSTALATION COMPLETE - LAMP-NG IS READY - ENJOY IN MODERATION___${txtrst}"
 echo "______________________________________________________________________"
 echo
 echo
