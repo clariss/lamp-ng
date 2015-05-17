@@ -1,0 +1,9 @@
+delimiter $$
+
+CREATE TABLE `matrix` (
+  `MATRIX_ID` varchar(45) NOT NULL,
+  `ROWS` int(11) DEFAULT NULL,
+  `COLS` int(11) DEFAULT NULL,
+  PRIMARY KEY (`MATRIX_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
+
