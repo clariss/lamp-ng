@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SLM Studio</title>
+<link rel="stylesheet" type="text/css" href="slmstudio/style.css" media="screen">
+</head>
+
+<body>
+<div id="main_container">
+	<div id="header">
+		<div id="logo"><a href="index.html"><img src="slmstudio/images/header.png" alt="" title="" border="0"></a>
+		</div>
+		<div id="phase">
+			<p>integrated service management</p>
+		</div>			
+		<div id="login">
+			<form method="get" action="">
+				<fieldset>
+					<input id="user" type="text" name="user" value="" />
+					<input id="pass" type="text" name="pass" value="" />
+					<input id="login" type="image" name="login" src="slmstudio/images/img10.jpg" />
+				</fieldset>
+			</form>
+		</div>
+			
+		<div id="navcontainer">
+			<ul id="navlist">      
+				<li><a target="middle" href="/slmstudio/sysstatus.php">  home  </a></li>
+				<li><a target="middle" href="/logzilla/html/index.php">  logs  </a></li>
+				<li><a target="middle" href="/centreon">  monitoring  </a></li>
+				<li><a target="middle" href="/nagios3">  alerts  </a></li>
+				<li><a target="middle" href="/redmine">  incidents  </a></li>
+				<li><a target="#" href="/phpmyadmin">  admin  </a></li>
+				</ul>
+		</div>
+    </div>
+    
+
+    
+    <div id="main_content">
+	<iframe frameborder=0 border=0 name="middle" id="middle" src="/slmstudio/sysstatus.php" style="width:100%; height: 900px; border:0px solid #F60; "></iframe>	
+    </div><!--end of main content-->
+ 
+
+     <div id="footer">
+	      	<div class="copyright">
+			<p> Copyright &#174 Clariss, 2013 - All rights reserved</p>
+        </div>
+    	
+    	<div class="footer_links"> 
+        <a target="middle" href="/slmstudio/about.html">About</a>
+        </div>
+    
+    
+    </div>  
+</div> <!--end of main container-->
+</body>
+</html>
