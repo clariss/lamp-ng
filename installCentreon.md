@@ -118,6 +118,12 @@ Where is your Nagios image directory ?
 default to [/usr/local/nagios/share/images/logos]
 > /usr/share/nagios/htdocs/images/logos
 Path /usr/share/nagios/htdocs/images/logos                 OK
+
+Where is your NDO ndomod binary ?
+default to [/usr/sbin/ndomod.o]
+> /usr/lib/ndoutils/ndomod-mysql-3x.o
+/usr/lib/ndoutils/ndomod-mysql-3x.o
+
 /usr/sbin/nagios3stats                                     OK
 p1_file : /usr/lib/nagios3/p1.pl                           OK
 /usr/bin/php                                               OK
@@ -252,6 +258,12 @@ XML_RPC                         1.4.5       1.5.5          OK
 SOAP                            0.10.1      0.12.0         OK
 Log                             1.9.11      1.12.7         OK
 All PEAR modules                                           OK
+
+
+**** XML_RPC is deprecated ****
+install new version to resolve the issue
+sudo pear install XML_RPC2
+
 
 ------------------------------------------------------------------------
                 Centreon Post Install
